@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background: #858587;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+.box{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+.form-box{
+    width: 450px;
+    margin: 0px 10px;
+}
+.form-box header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.btn{
+    height: 35px;
+    background:black;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin: 10px 0;
+    padding: 0px 10px;
+    color: #ffffff;
+}
+
+.btn:hover{
+    color:gold;
+}
+.submit{
+    width: 100%;
+}
+.links{
+    margin-bottom: 15px;
+}
+
+/********* Home *****************/
+
+.nav{
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 900;
+    
+}
+.logo a{
+    text-decoration: none;
+    color: #000;
+}
+.right-links a{
+    padding: 0 10px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    
+}
+.bottom .post .input-thread{
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+.main-box .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin: 25px 0;
+}
+.bottom{
+    width: 100%;
+    margin-top: 40px; 
+}
+.bottom .post{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+}
+textarea{
+    resize: none;
+    width: 400px;
+    height: 50px;
+    color: black;
+    margin-top: 10px;
+}
+h2{
+    text-align: center;
+    text-decoration: none;
+}
+.thread {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    
+}
+.thread .lanjut-thread {
+    margin:0 10px;
+    width: 80%;
+    
+}
+.input-file {
+    display: none;
+}
+
+.replies{
+    margin-left: 10px;
+    width: 70%;
+}
+.input-file-label {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.input-file-label:hover {
+    color: gold;
+}
+
+
+.input-file:valid + .file-name {
+    display: block;
+}
+
+
+.file-name {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+@media only screen and (max-width:1280px){
+    .main-box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top .box{
+        margin: 10px 10px;
+    }
+    .bottom{
+        margin-top: 0;
+    }
+}
+.message{
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border:1px solid #699053;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.popup {
+    display: block;  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 1;
+    margin: 5px 0;
+}
+.popup-content {
+    background: black;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.popup.show {
+    display: flex;
+}
+.btn-close {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
